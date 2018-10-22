@@ -1,3 +1,5 @@
 module Paramable
-
+ def to_param
+ name.doncase.gsub(' ', '-')
+ end 
 end 
